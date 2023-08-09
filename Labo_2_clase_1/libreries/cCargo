@@ -1,0 +1,5 @@
+class Cargo:
+ def __init__(self, cargo, quality, draft, crew):
+    self.cargo = cargo
+    self.quality = quality
+    # Completar herencia
