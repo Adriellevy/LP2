@@ -2,28 +2,28 @@ from src import ship
 from src import cargo
 from src import cruise
 
-def test_negativo_ship(barco):
-  barco=ship.Ship(barco)
+def test_negativo_ship(draft_,crew_):
+  barco=ship.Ship(draft_,crew_)
   assert barco.is_worth_it()
 
-def test_positivo_ship(barco):
-  barco = ship.Ship(barco)
+def test_positivo_ship(draft_, crew_):
+  barco = ship.Ship(draft_, crew_)
   assert barco.is_worth_it()
 
-def test_negativo_cargo(cargo_):
-  cargo_ = ship.Ship(cargo_)
+def test_negativo_cargo(draft_, crew_):
+  cargo_ = cargo.Cargo(draft_, crew_)
   assert cargo_.is_worth_it()
 
-def test_positivo_cargo(cargo_):
-  cargo_ = ship.Ship(cargo_)
+def test_positivo_cargo(draft_, crew_):
+  cargo_ = cargo.Cargo(draft_, crew_)
   assert cargo_.is_worth_it()
 
-def test_negativo_cruise(crucero):
-  crucero = ship.Ship(crucero)
+def test_negativo_cruise(passengers_, draft_,crew_):
+  crucero = cruise.Cruise(passengers_, draft_, crew_)
   assert crucero.is_worth_it()
 
-def test_positivo_cruise(crucero):
-  crucero = ship.Ship(crucero)
+def test_positivo_cruise(passengers_,draft_,crew_):
+  crucero = cruise.Cruise(passengers_, draft_,crew_)
   assert crucero.is_worth_it()
 
 
