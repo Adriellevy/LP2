@@ -13,7 +13,11 @@ def main():
     # primos = Hallar_un_primo(7,primos)
     # Imprimir_Lista(primos)
     primos = Reconocer_Primos_Hasta_n(10000, primos)
-    Numeros_de_carmiel(primos, 10000)
+    for i in range(10000):
+        try:
+            Numeros_de_carmiel(primos, i)
+        except RecursionError as error:
+            print("El numero ingresado no es Carmicheleano")
     # Maximo Comun Divisor de la Librería Math
     # Maximo comun divisior responde a la ¿pregunta cual
     # es el numero que divide a ambos numeros con resto 0?
@@ -22,7 +26,7 @@ def main():
 def Numeros_de_carmiel(Lista_num_Prim, Aux, indice=0):
     #pedir ayuda a francisco en relacion a como hacia el tema del perlocation
     if Aux == 1:
-        print("Se encontro un numero")
+        print("Se encontro que el numero es Carmicheleano"+str(Aux)+" y es factorizable por los numeros de arriba")
         return 1
     if Aux % Lista_num_Prim[indice] == 0:
         print("Se divide por: " + str(Lista_num_Prim[indice]))
