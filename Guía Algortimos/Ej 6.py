@@ -22,11 +22,27 @@ import math
     
        
     Problemas a resolver: 
-        - Considero que un numero no es Carmichaeleano cuando la computadora tira un Exception de recursion: 
-            - Error que sucede cuando el Arbol generado es Enorme en serio (quizas es solucionable)
-        - Debido a que la Funcion es recursiva no se cuales fueron los numeros por los que se pudo factorizar, el numero evaluado. 
-        - No pude hacer que el numero que se imprima en el caso base sea el que se factorizo y no 1: 
-                tiene sentido por como funciona la funcion recursiva y la generacion de bloques de memoria
+        Primarios: 
+            - Considero que un numero no es Carmichaeleano cuando la computadora tira un Exception de recursion: 
+                - Error que sucede cuando el Arbol generado es Enorme en serio 
+                    quizas es solucionable pero no se me ocurrio alguna solucion
+                
+                
+            - No sabría como decirle al caso base que quiero que me considere solo los numeros 
+                charmichaeleanos son los que se factorizan por 3 o mas numeros primos
+                
+                Se me ocurrieron dos posibles soluciones "basicas" pero no sabría si estarían bien, ya que en caso
+                de factorizar un numero y generar una rama que no lleve a nada no sabría como deshacerlo: 
+                    La primera es un indice de cuantas veces se factorizo 
+                    La segunda sería agregar una lista o puntero a una lista que en el cual puede ir agregando los numeros
+                        por los que se factorizo, la cantidad de elementos podría cumplir el rol del indice que mencione
+                        en la primera solucion
+        Secundarios:             
+                - Debido a que la Funcion es recursiva no se cuales fueron los numeros por los que se pudo factorizar, el numero evaluado. 
+                
+                - No pude hacer que el numero que se imprima en el caso base sea el que se factorizo y no 1: 
+                        tiene sentido por como funciona la funcion recursiva y la generacion de bloques de memoria
+    
     Mejoras: 
         - En vez de imprimir las factorizaciones ver de como devolverlas
         - No tener que hardcodear los primeros numeros primos
